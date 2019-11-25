@@ -43,7 +43,7 @@ public class InternalFrameBemvindo extends javax.swing.JInternalFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         AbrirCotacao.setBackground(new java.awt.Color(0, 0, 255));
-        AbrirCotacao.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        AbrirCotacao.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         AbrirCotacao.setForeground(new java.awt.Color(255, 255, 255));
         AbrirCotacao.setText("Abrir Cotação");
         AbrirCotacao.setBorder(null);
@@ -53,10 +53,10 @@ public class InternalFrameBemvindo extends javax.swing.JInternalFrame {
                 AbrirCotacaoActionPerformed(evt);
             }
         });
-        getContentPane().add(AbrirCotacao, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 440, 402, 180));
+        getContentPane().add(AbrirCotacao, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, 270, 80));
 
         emAndamento.setBackground(new java.awt.Color(255, 153, 0));
-        emAndamento.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        emAndamento.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         emAndamento.setForeground(new java.awt.Color(255, 255, 255));
         emAndamento.setText("Em Andamento");
         emAndamento.setBorder(null);
@@ -66,13 +66,13 @@ public class InternalFrameBemvindo extends javax.swing.JInternalFrame {
                 emAndamentoActionPerformed(evt);
             }
         });
-        getContentPane().add(emAndamento, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 440, 402, 180));
+        getContentPane().add(emAndamento, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 360, 270, 80));
 
         BackGround.setIcon(new javax.swing.ImageIcon(getClass().getResource("/COMPO..BOASVINDAS/Background geral.png"))); // NOI18N
         BackGround.setText("jLabel1");
-        getContentPane().add(BackGround, new org.netbeans.lib.awtextra.AbsoluteConstraints(-30, 0, 1280, 780));
+        getContentPane().add(BackGround, new org.netbeans.lib.awtextra.AbsoluteConstraints(-740, -30, 1490, 910));
 
-        setBounds(0, 0, 1250, 800);
+        setBounds(0, 0, 750, 650);
     }// </editor-fold>//GEN-END:initComponents
     
     private void AbrirCotacaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AbrirCotacaoActionPerformed
