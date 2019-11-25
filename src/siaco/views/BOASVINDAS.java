@@ -25,6 +25,7 @@ public class BOASVINDAS extends javax.swing.JFrame {
   
     public static JDesktopPane getDesktopPaneSecundaria(){
     telaCotações.dispose();
+    
     return getInstancia().jDesktopPaneSecundario;
     } 
     

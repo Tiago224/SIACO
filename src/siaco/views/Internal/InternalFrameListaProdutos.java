@@ -13,9 +13,10 @@ import siaco.views.BOASVINDAS;
  */
 public class InternalFrameListaProdutos extends javax.swing.JInternalFrame {
 
-    /**
-     * Creates new form InternalFrameBemvindo
-     */
+    InternalFrameCriarListadeProdutos Lista = new InternalFrameCriarListadeProdutos();
+    
+    
+    
     public InternalFrameListaProdutos() {
         initComponents();
         
@@ -30,10 +31,10 @@ public class InternalFrameListaProdutos extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        AbrirCotacao = new javax.swing.JButton();
-        emAndamento = new javax.swing.JButton();
-        AbrirCotacao1 = new javax.swing.JButton();
-        AbrirCotacao2 = new javax.swing.JButton();
+        bImprimirEnviar = new javax.swing.JButton();
+        bMinhaLista = new javax.swing.JButton();
+        bCriarLista = new javax.swing.JButton();
+        bfavoritos = new javax.swing.JButton();
         BackGround = new javax.swing.JLabel();
 
         setBackground(null);
@@ -44,57 +45,57 @@ public class InternalFrameListaProdutos extends javax.swing.JInternalFrame {
         setAlignmentY(0.0F);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        AbrirCotacao.setBackground(new java.awt.Color(0, 204, 102));
-        AbrirCotacao.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        AbrirCotacao.setForeground(new java.awt.Color(255, 255, 255));
-        AbrirCotacao.setText("Imprimir/Enviar");
-        AbrirCotacao.setBorder(null);
-        AbrirCotacao.setBorderPainted(false);
-        AbrirCotacao.addActionListener(new java.awt.event.ActionListener() {
+        bImprimirEnviar.setBackground(new java.awt.Color(0, 204, 102));
+        bImprimirEnviar.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        bImprimirEnviar.setForeground(new java.awt.Color(255, 255, 255));
+        bImprimirEnviar.setText("Imprimir/Enviar");
+        bImprimirEnviar.setBorder(null);
+        bImprimirEnviar.setBorderPainted(false);
+        bImprimirEnviar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AbrirCotacaoActionPerformed(evt);
+                bImprimirEnviarActionPerformed(evt);
             }
         });
-        getContentPane().add(AbrirCotacao, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 390, 270, 80));
+        getContentPane().add(bImprimirEnviar, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 390, 270, 80));
 
-        emAndamento.setBackground(new java.awt.Color(102, 51, 204));
-        emAndamento.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        emAndamento.setForeground(new java.awt.Color(255, 255, 255));
-        emAndamento.setText("Minha Lista");
-        emAndamento.setBorder(null);
-        emAndamento.setBorderPainted(false);
-        emAndamento.addActionListener(new java.awt.event.ActionListener() {
+        bMinhaLista.setBackground(new java.awt.Color(102, 51, 204));
+        bMinhaLista.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        bMinhaLista.setForeground(new java.awt.Color(255, 255, 255));
+        bMinhaLista.setText("Minha Lista");
+        bMinhaLista.setBorder(null);
+        bMinhaLista.setBorderPainted(false);
+        bMinhaLista.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                emAndamentoActionPerformed(evt);
+                bMinhaListaActionPerformed(evt);
             }
         });
-        getContentPane().add(emAndamento, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 270, 270, 80));
+        getContentPane().add(bMinhaLista, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 270, 270, 80));
 
-        AbrirCotacao1.setBackground(new java.awt.Color(0, 0, 255));
-        AbrirCotacao1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        AbrirCotacao1.setForeground(new java.awt.Color(255, 255, 255));
-        AbrirCotacao1.setText("Criar Lista");
-        AbrirCotacao1.setBorder(null);
-        AbrirCotacao1.setBorderPainted(false);
-        AbrirCotacao1.addActionListener(new java.awt.event.ActionListener() {
+        bCriarLista.setBackground(new java.awt.Color(0, 0, 255));
+        bCriarLista.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        bCriarLista.setForeground(new java.awt.Color(255, 255, 255));
+        bCriarLista.setText("Criar Lista");
+        bCriarLista.setBorder(null);
+        bCriarLista.setBorderPainted(false);
+        bCriarLista.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AbrirCotacao1ActionPerformed(evt);
+                bCriarListaActionPerformed(evt);
             }
         });
-        getContentPane().add(AbrirCotacao1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 270, 270, 80));
+        getContentPane().add(bCriarLista, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 270, 270, 80));
 
-        AbrirCotacao2.setBackground(new java.awt.Color(204, 153, 0));
-        AbrirCotacao2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        AbrirCotacao2.setForeground(new java.awt.Color(255, 255, 255));
-        AbrirCotacao2.setText("Favoritos");
-        AbrirCotacao2.setBorder(null);
-        AbrirCotacao2.setBorderPainted(false);
-        AbrirCotacao2.addActionListener(new java.awt.event.ActionListener() {
+        bfavoritos.setBackground(new java.awt.Color(204, 153, 0));
+        bfavoritos.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        bfavoritos.setForeground(new java.awt.Color(255, 255, 255));
+        bfavoritos.setText("Favoritos");
+        bfavoritos.setBorder(null);
+        bfavoritos.setBorderPainted(false);
+        bfavoritos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AbrirCotacao2ActionPerformed(evt);
+                bfavoritosActionPerformed(evt);
             }
         });
-        getContentPane().add(AbrirCotacao2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 390, 270, 80));
+        getContentPane().add(bfavoritos, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 390, 270, 80));
 
         BackGround.setIcon(new javax.swing.ImageIcon(getClass().getResource("/COMPO..BOASVINDAS/Background geral.png"))); // NOI18N
         BackGround.setText("jLabel1");
@@ -103,28 +104,33 @@ public class InternalFrameListaProdutos extends javax.swing.JInternalFrame {
         setBounds(0, 0, 750, 650);
     }// </editor-fold>//GEN-END:initComponents
     
-    private void AbrirCotacaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AbrirCotacaoActionPerformed
+    private void bImprimirEnviarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bImprimirEnviarActionPerformed
         
-    }//GEN-LAST:event_AbrirCotacaoActionPerformed
+    }//GEN-LAST:event_bImprimirEnviarActionPerformed
 
-    private void emAndamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emAndamentoActionPerformed
+    private void bMinhaListaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bMinhaListaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_emAndamentoActionPerformed
+    }//GEN-LAST:event_bMinhaListaActionPerformed
 
-    private void AbrirCotacao1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AbrirCotacao1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_AbrirCotacao1ActionPerformed
+    private void bCriarListaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bCriarListaActionPerformed
+    
+        
+    BOASVINDAS.getDesktopPaneSecundaria().add(Lista);
+   
+    Lista.setVisible(true);
+    Lista.setLocation(0, 0);
+    }//GEN-LAST:event_bCriarListaActionPerformed
 
-    private void AbrirCotacao2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AbrirCotacao2ActionPerformed
+    private void bfavoritosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bfavoritosActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_AbrirCotacao2ActionPerformed
+    }//GEN-LAST:event_bfavoritosActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton AbrirCotacao;
-    private javax.swing.JButton AbrirCotacao1;
-    private javax.swing.JButton AbrirCotacao2;
     private javax.swing.JLabel BackGround;
-    private javax.swing.JButton emAndamento;
+    private javax.swing.JButton bCriarLista;
+    private javax.swing.JButton bImprimirEnviar;
+    private javax.swing.JButton bMinhaLista;
+    private javax.swing.JButton bfavoritos;
     // End of variables declaration//GEN-END:variables
 }
