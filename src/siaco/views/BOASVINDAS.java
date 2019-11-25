@@ -26,12 +26,12 @@ public class BOASVINDAS extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        Logo = new javax.swing.JLabel();
         BTrabalheConosco = new javax.swing.JButton();
         BQuemSomos1 = new javax.swing.JButton();
         BContato = new javax.swing.JButton();
-        BarraLateralDireito = new javax.swing.JLabel();
-        Logo = new javax.swing.JLabel();
         BarraInferior = new javax.swing.JLabel();
+        BarraLateralDireito = new javax.swing.JLabel();
         PainelSuperior = new javax.swing.JPanel();
         Menu = new javax.swing.JPanel();
         ListaProdutos = new javax.swing.JButton();
@@ -51,10 +51,20 @@ public class BOASVINDAS extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Siaco v.3");
-        setMinimumSize(new java.awt.Dimension(1440, 900));
+        setMaximumSize(new java.awt.Dimension(800, 600));
+        setMinimumSize(new java.awt.Dimension(1291, 753));
         setResizable(false);
         setSize(new java.awt.Dimension(1440, 900));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/COMPO..BOASVINDAS/Logo Siaco.png"))); // NOI18N
+        Logo.setMaximumSize(new java.awt.Dimension(259, 90));
+        Logo.setMinimumSize(new java.awt.Dimension(259, 90));
+        Logo.setName(""); // NOI18N
+        Logo.setOpaque(true);
+        Logo.setPreferredSize(new java.awt.Dimension(259, 90));
+        Logo.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        getContentPane().add(Logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 340, -1));
 
         BTrabalheConosco.setBackground(new java.awt.Color(0, 0, 0));
         BTrabalheConosco.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
@@ -71,7 +81,7 @@ public class BOASVINDAS extends javax.swing.JFrame {
                 BTrabalheConoscoActionPerformed(evt);
             }
         });
-        getContentPane().add(BTrabalheConosco, new org.netbeans.lib.awtextra.AbsoluteConstraints(1600, 960, 220, 30));
+        getContentPane().add(BTrabalheConosco, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 660, 220, 30));
 
         BQuemSomos1.setBackground(new java.awt.Color(0, 0, 0));
         BQuemSomos1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
@@ -88,7 +98,7 @@ public class BOASVINDAS extends javax.swing.JFrame {
                 BQuemSomos1ActionPerformed(evt);
             }
         });
-        getContentPane().add(BQuemSomos1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1600, 900, 150, 30));
+        getContentPane().add(BQuemSomos1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 600, 150, 30));
 
         BContato.setBackground(new java.awt.Color(0, 0, 0));
         BContato.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
@@ -105,26 +115,17 @@ public class BOASVINDAS extends javax.swing.JFrame {
                 BContatoActionPerformed(evt);
             }
         });
-        getContentPane().add(BContato, new org.netbeans.lib.awtextra.AbsoluteConstraints(1600, 930, 150, 30));
-
-        BarraLateralDireito.setIcon(new javax.swing.ImageIcon(getClass().getResource("/COMPO..BOASVINDAS/Rectangle 8.png"))); // NOI18N
-        getContentPane().add(BarraLateralDireito, new org.netbeans.lib.awtextra.AbsoluteConstraints(1590, 50, 330, 1050));
-
-        Logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/COMPO..BOASVINDAS/Logo Siaco.png"))); // NOI18N
-        Logo.setMaximumSize(new java.awt.Dimension(259, 90));
-        Logo.setMinimumSize(new java.awt.Dimension(259, 90));
-        Logo.setName(""); // NOI18N
-        Logo.setOpaque(true);
-        Logo.setPreferredSize(new java.awt.Dimension(259, 90));
-        Logo.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        getContentPane().add(Logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 340, -1));
+        getContentPane().add(BContato, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 630, 150, 30));
 
         BarraInferior.setIcon(new javax.swing.ImageIcon(getClass().getResource("/COMPO..BOASVINDAS/Rectangle 9.png"))); // NOI18N
-        getContentPane().add(BarraInferior, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 890, 1580, 180));
+        getContentPane().add(BarraInferior, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 580, 950, 180));
+
+        BarraLateralDireito.setIcon(new javax.swing.ImageIcon(getClass().getResource("/COMPO..BOASVINDAS/Rectangle 8.png"))); // NOI18N
+        getContentPane().add(BarraLateralDireito, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 0, 200, 750));
 
         PainelSuperior.setBackground(new java.awt.Color(51, 51, 51));
         PainelSuperior.setLayout(null);
-        getContentPane().add(PainelSuperior, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 0, 1820, 90));
+        getContentPane().add(PainelSuperior, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 0, 1200, 90));
 
         Menu.setBackground(new java.awt.Color(153, 153, 153));
         Menu.setLayout(null);
@@ -228,9 +229,9 @@ public class BOASVINDAS extends javax.swing.JFrame {
             }
         });
         Menu.add(ajuda);
-        ajuda.setBounds(20, 430, 310, 44);
+        ajuda.setBounds(20, 430, 310, 43);
 
-        getContentPane().add(Menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 340, 1080));
+        getContentPane().add(Menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 340, 750));
 
         background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/COMPO..BOASVINDAS/Background geral.png"))); // NOI18N
         background.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
@@ -239,10 +240,8 @@ public class BOASVINDAS extends javax.swing.JFrame {
         background.setName(""); // NOI18N
         background.setOpaque(true);
         background.setPreferredSize(new java.awt.Dimension(1440, 900));
-        getContentPane().add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 90, 1610, 1110));
-
-        jDesktopPanePrincipal.setToolTipText("");
-        getContentPane().add(jDesktopPanePrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(341, 91, 1250, 800));
+        getContentPane().add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(-100, -20, 1390, 1170));
+        getContentPane().add(jDesktopPanePrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 90, 750, 560));
 
         jMenu1.setText("Arquivo");
         jMenuBar1.add(jMenu1);
@@ -261,7 +260,7 @@ public class BOASVINDAS extends javax.swing.JFrame {
 
         setJMenuBar(jMenuBar1);
 
-        setSize(new java.awt.Dimension(1940, 1062));
+        setSize(new java.awt.Dimension(1309, 800));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
     private void fecharultaimjanela(JInternalFrame j){   
