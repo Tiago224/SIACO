@@ -1,7 +1,6 @@
 
 package siaco.views;
 
-import java.util.ArrayList;
 import javax.swing.JInternalFrame;
 import javax.swing.JOptionPane;
 import siaco.views.Internal.*;
@@ -41,8 +40,8 @@ public class BOASVINDAS extends javax.swing.JFrame {
         Fornecedores = new javax.swing.JButton();
         ajuda = new javax.swing.JButton();
         background = new javax.swing.JLabel();
-        jDesktopPanePrincipal = new javax.swing.JDesktopPane();
         jDesktopPaneSecundario = new javax.swing.JDesktopPane();
+        jDesktopPanePrincipal = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -241,8 +240,8 @@ public class BOASVINDAS extends javax.swing.JFrame {
         background.setOpaque(true);
         background.setPreferredSize(new java.awt.Dimension(1440, 900));
         getContentPane().add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(-100, -20, 1390, 1170));
-        getContentPane().add(jDesktopPanePrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 90, 750, 650));
         getContentPane().add(jDesktopPaneSecundario, new org.netbeans.lib.awtextra.AbsoluteConstraints(341, 91, 950, 650));
+        getContentPane().add(jDesktopPanePrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 90, 750, 650));
 
         jMenu1.setText("Arquivo");
         jMenuBar1.add(jMenu1);
@@ -271,7 +270,8 @@ public class BOASVINDAS extends javax.swing.JFrame {
     private void BemvindosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BemvindosActionPerformed
         fecharultaimjanela(TelaListaProdutos);
         fecharultaimjanela(telaCotações);
-        
+    jDesktopPaneSecundario.setVisible(false);
+    jDesktopPanePrincipal.setVisible(true);
     jDesktopPanePrincipal.add(telaBemvindo);
     telaBemvindo.setVisible(true);
     telaBemvindo.setClosable(true);
@@ -280,7 +280,9 @@ public class BOASVINDAS extends javax.swing.JFrame {
     }//GEN-LAST:event_BemvindosActionPerformed
 
     private void ListaProdutosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ListaProdutosActionPerformed
-    jDesktopPanePrincipal.add(TelaListaProdutos);
+    jDesktopPaneSecundario.setVisible(false);
+    jDesktopPanePrincipal.setVisible(true);
+        jDesktopPanePrincipal.add(TelaListaProdutos);
         fecharultaimjanela(telaBemvindo);
         fecharultaimjanela(telaCotações);
     
@@ -292,9 +294,12 @@ public class BOASVINDAS extends javax.swing.JFrame {
     }//GEN-LAST:event_ListaProdutosActionPerformed
 
     private void CotacoesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CotacoesActionPerformed
-    jDesktopPanePrincipal.add(telaCotações);
-           fecharultaimjanela(TelaListaProdutos);
-        fecharultaimjanela(telaBemvindo);
+    fecharultaimjanela(TelaListaProdutos);
+    fecharultaimjanela(telaBemvindo);
+    jDesktopPanePrincipal.setVisible(false);
+    jDesktopPaneSecundario.add(telaCotações);
+    jDesktopPaneSecundario.setVisible(true);
+
     
     telaCotações.setVisible(true);
     telaCotações.setClosable(true);
