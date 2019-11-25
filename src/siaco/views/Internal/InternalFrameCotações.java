@@ -113,7 +113,7 @@ public class InternalFrameCotações extends javax.swing.JInternalFrame {
         BackGround.setText("jLabel1");
         getContentPane().add(BackGround, new org.netbeans.lib.awtextra.AbsoluteConstraints(-30, 0, 1280, 780));
 
-        setBounds(0, 0, 1250, 800);
+        setBounds(0, 0, 1071, 650);
     }// </editor-fold>//GEN-END:initComponents
 
     private void AbrirCotacaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AbrirCotacaoActionPerformed

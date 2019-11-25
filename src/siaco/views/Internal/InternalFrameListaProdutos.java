@@ -45,7 +45,7 @@ public class InternalFrameListaProdutos extends javax.swing.JInternalFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         AbrirCotacao.setBackground(new java.awt.Color(0, 204, 102));
-        AbrirCotacao.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        AbrirCotacao.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         AbrirCotacao.setForeground(new java.awt.Color(255, 255, 255));
         AbrirCotacao.setText("Imprimir/Enviar");
         AbrirCotacao.setBorder(null);
@@ -55,10 +55,10 @@ public class InternalFrameListaProdutos extends javax.swing.JInternalFrame {
                 AbrirCotacaoActionPerformed(evt);
             }
         });
-        getContentPane().add(AbrirCotacao, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 340, 450, 180));
+        getContentPane().add(AbrirCotacao, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 390, 270, 80));
 
         emAndamento.setBackground(new java.awt.Color(102, 51, 204));
-        emAndamento.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        emAndamento.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         emAndamento.setForeground(new java.awt.Color(255, 255, 255));
         emAndamento.setText("Minha Lista");
         emAndamento.setBorder(null);
@@ -68,10 +68,10 @@ public class InternalFrameListaProdutos extends javax.swing.JInternalFrame {
                 emAndamentoActionPerformed(evt);
             }
         });
-        getContentPane().add(emAndamento, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 110, 450, 180));
+        getContentPane().add(emAndamento, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 270, 270, 80));
 
         AbrirCotacao1.setBackground(new java.awt.Color(0, 0, 255));
-        AbrirCotacao1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        AbrirCotacao1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         AbrirCotacao1.setForeground(new java.awt.Color(255, 255, 255));
         AbrirCotacao1.setText("Criar Lista");
         AbrirCotacao1.setBorder(null);
@@ -81,10 +81,10 @@ public class InternalFrameListaProdutos extends javax.swing.JInternalFrame {
                 AbrirCotacao1ActionPerformed(evt);
             }
         });
-        getContentPane().add(AbrirCotacao1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 110, 450, 180));
+        getContentPane().add(AbrirCotacao1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 270, 270, 80));
 
         AbrirCotacao2.setBackground(new java.awt.Color(204, 153, 0));
-        AbrirCotacao2.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        AbrirCotacao2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         AbrirCotacao2.setForeground(new java.awt.Color(255, 255, 255));
         AbrirCotacao2.setText("Favoritos");
         AbrirCotacao2.setBorder(null);
@@ -94,13 +94,13 @@ public class InternalFrameListaProdutos extends javax.swing.JInternalFrame {
                 AbrirCotacao2ActionPerformed(evt);
             }
         });
-        getContentPane().add(AbrirCotacao2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 340, 450, 180));
+        getContentPane().add(AbrirCotacao2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 390, 270, 80));
 
         BackGround.setIcon(new javax.swing.ImageIcon(getClass().getResource("/COMPO..BOASVINDAS/Background geral.png"))); // NOI18N
         BackGround.setText("jLabel1");
-        getContentPane().add(BackGround, new org.netbeans.lib.awtextra.AbsoluteConstraints(-30, 0, 1280, 780));
+        getContentPane().add(BackGround, new org.netbeans.lib.awtextra.AbsoluteConstraints(-390, 0, 1280, 780));
 
-        setBounds(0, 0, 1250, 800);
+        setBounds(0, 0, 750, 650);
     }// </editor-fold>//GEN-END:initComponents
     
     private void AbrirCotacaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AbrirCotacaoActionPerformed
