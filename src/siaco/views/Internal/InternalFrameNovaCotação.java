@@ -63,7 +63,7 @@ public class InternalFrameNovaCotação extends javax.swing.JInternalFrame {
         setBackground(null);
         setBorder(null);
         setClosable(true);
-        setTitle("Bem vindo");
+        setTitle("Abrir Nova Cotação");
         setAlignmentX(0.0F);
         setAlignmentY(0.0F);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());

@@ -1,31 +1,49 @@
 
 package siaco.views;
 
+import javax.swing.JDesktopPane;
 import javax.swing.JInternalFrame;
-import javax.swing.JOptionPane;
 import siaco.views.Internal.*;
 
 
 public class BOASVINDAS extends javax.swing.JFrame {
-    
-    
-    
+      
   InternalFrameBemvindo telaBemvindo = new InternalFrameBemvindo();
   InternalFrameListaProdutos TelaListaProdutos = new InternalFrameListaProdutos();
-  InternalFrameCotações telaCotações = new InternalFrameCotações();
+  static InternalFrameCotações telaCotações = new InternalFrameCotações();
   
+  //PADRAO DE PROJETO SINGLETON
+  private static BOASVINDAS p;
+  
+  
+    public static BOASVINDAS getInstancia(){
+    if(p==null){
+        p = new BOASVINDAS();
+        }
+    return p;    
+    }
+  
+    public static JDesktopPane getDesktopPaneSecundaria(){
+    telaCotações.dispose();
+    return getInstancia().jDesktopPaneSecundario;
+    } 
+    
+   
   
     public BOASVINDAS() {
         initComponents();
         
     }
 
+    
    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         Logo = new javax.swing.JLabel();
+        jDesktopPanePrincipal = new javax.swing.JDesktopPane();
+        jDesktopPaneSecundario = new javax.swing.JDesktopPane();
         BTrabalheConosco = new javax.swing.JButton();
         BQuemSomos1 = new javax.swing.JButton();
         BContato = new javax.swing.JButton();
@@ -40,8 +58,6 @@ public class BOASVINDAS extends javax.swing.JFrame {
         Fornecedores = new javax.swing.JButton();
         ajuda = new javax.swing.JButton();
         background = new javax.swing.JLabel();
-        jDesktopPaneSecundario = new javax.swing.JDesktopPane();
-        jDesktopPanePrincipal = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -64,6 +80,36 @@ public class BOASVINDAS extends javax.swing.JFrame {
         Logo.setPreferredSize(new java.awt.Dimension(259, 90));
         Logo.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         getContentPane().add(Logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 340, -1));
+
+        jDesktopPanePrincipal.setOpaque(false);
+
+        javax.swing.GroupLayout jDesktopPanePrincipalLayout = new javax.swing.GroupLayout(jDesktopPanePrincipal);
+        jDesktopPanePrincipal.setLayout(jDesktopPanePrincipalLayout);
+        jDesktopPanePrincipalLayout.setHorizontalGroup(
+            jDesktopPanePrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 750, Short.MAX_VALUE)
+        );
+        jDesktopPanePrincipalLayout.setVerticalGroup(
+            jDesktopPanePrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 650, Short.MAX_VALUE)
+        );
+
+        getContentPane().add(jDesktopPanePrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 90, 750, 650));
+
+        jDesktopPaneSecundario.setOpaque(false);
+
+        javax.swing.GroupLayout jDesktopPaneSecundarioLayout = new javax.swing.GroupLayout(jDesktopPaneSecundario);
+        jDesktopPaneSecundario.setLayout(jDesktopPaneSecundarioLayout);
+        jDesktopPaneSecundarioLayout.setHorizontalGroup(
+            jDesktopPaneSecundarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 950, Short.MAX_VALUE)
+        );
+        jDesktopPaneSecundarioLayout.setVerticalGroup(
+            jDesktopPaneSecundarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 650, Short.MAX_VALUE)
+        );
+
+        getContentPane().add(jDesktopPaneSecundario, new org.netbeans.lib.awtextra.AbsoluteConstraints(341, 91, 950, 650));
 
         BTrabalheConosco.setBackground(new java.awt.Color(0, 0, 0));
         BTrabalheConosco.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
@@ -240,8 +286,6 @@ public class BOASVINDAS extends javax.swing.JFrame {
         background.setOpaque(true);
         background.setPreferredSize(new java.awt.Dimension(1440, 900));
         getContentPane().add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(-100, -20, 1390, 1170));
-        getContentPane().add(jDesktopPaneSecundario, new org.netbeans.lib.awtextra.AbsoluteConstraints(341, 91, 950, 650));
-        getContentPane().add(jDesktopPanePrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 90, 750, 650));
 
         jMenu1.setText("Arquivo");
         jMenuBar1.add(jMenu1);
@@ -263,7 +307,7 @@ public class BOASVINDAS extends javax.swing.JFrame {
         setSize(new java.awt.Dimension(1309, 800));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-    private void fecharultaimjanela(JInternalFrame j){   
+    public static void fecharultaimjanela(JInternalFrame j){   
     j.dispose();
     }
         
@@ -297,8 +341,9 @@ public class BOASVINDAS extends javax.swing.JFrame {
     fecharultaimjanela(TelaListaProdutos);
     fecharultaimjanela(telaBemvindo);
     jDesktopPanePrincipal.setVisible(false);
-    jDesktopPaneSecundario.add(telaCotações);
     jDesktopPaneSecundario.setVisible(true);
+    jDesktopPaneSecundario.add(telaCotações);
+    
 
     
     telaCotações.setVisible(true);
@@ -373,7 +418,7 @@ public class BOASVINDAS extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new BOASVINDAS().setVisible(true);
+                getInstancia().setVisible(true);
             }
         });
     }
