@@ -30,12 +30,12 @@ public class InternalFrameCotações extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        AbrirCotacao3 = new javax.swing.JButton();
+        AbrirCotacao4 = new javax.swing.JButton();
+        AbrirCotacao5 = new javax.swing.JButton();
         AbrirCotacao = new javax.swing.JButton();
         AbrirCotacao1 = new javax.swing.JButton();
         AbrirCotacao2 = new javax.swing.JButton();
-        LSeuHistorico = new javax.swing.JLabel();
-        LCotaçõesFechadas = new javax.swing.JLabel();
-        LCotaçõesemAberto = new javax.swing.JLabel();
         Historico = new javax.swing.JLabel();
         CotaçõesAbertas = new javax.swing.JLabel();
         CotaçõesFechadas = new javax.swing.JLabel();
@@ -49,6 +49,45 @@ public class InternalFrameCotações extends javax.swing.JInternalFrame {
         setAlignmentY(0.0F);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        AbrirCotacao3.setBackground(new java.awt.Color(51, 204, 0));
+        AbrirCotacao3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        AbrirCotacao3.setForeground(new java.awt.Color(255, 255, 255));
+        AbrirCotacao3.setText("Cotações Em Aberto");
+        AbrirCotacao3.setBorder(null);
+        AbrirCotacao3.setBorderPainted(false);
+        AbrirCotacao3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AbrirCotacao3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(AbrirCotacao3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 220, 70));
+
+        AbrirCotacao4.setBackground(new java.awt.Color(0, 0, 255));
+        AbrirCotacao4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        AbrirCotacao4.setForeground(new java.awt.Color(255, 255, 255));
+        AbrirCotacao4.setText("Seu Histórico");
+        AbrirCotacao4.setBorder(null);
+        AbrirCotacao4.setBorderPainted(false);
+        AbrirCotacao4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AbrirCotacao4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(AbrirCotacao4, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 0, 220, 70));
+
+        AbrirCotacao5.setBackground(new java.awt.Color(255, 0, 0));
+        AbrirCotacao5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        AbrirCotacao5.setForeground(new java.awt.Color(255, 255, 255));
+        AbrirCotacao5.setText("Cotações Fechadas");
+        AbrirCotacao5.setBorder(null);
+        AbrirCotacao5.setBorderPainted(false);
+        AbrirCotacao5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AbrirCotacao5ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(AbrirCotacao5, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 0, 220, 70));
+
         AbrirCotacao.setBackground(new java.awt.Color(255, 153, 0));
         AbrirCotacao.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         AbrirCotacao.setForeground(new java.awt.Color(255, 255, 255));
@@ -60,7 +99,7 @@ public class InternalFrameCotações extends javax.swing.JInternalFrame {
                 AbrirCotacaoActionPerformed(evt);
             }
         });
-        getContentPane().add(AbrirCotacao, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 390, 250, 100));
+        getContentPane().add(AbrirCotacao, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 410, 220, 80));
 
         AbrirCotacao1.setBackground(new java.awt.Color(0, 0, 255));
         AbrirCotacao1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -73,7 +112,7 @@ public class InternalFrameCotações extends javax.swing.JInternalFrame {
                 AbrirCotacao1ActionPerformed(evt);
             }
         });
-        getContentPane().add(AbrirCotacao1, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 150, 250, 100));
+        getContentPane().add(AbrirCotacao1, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 330, 220, 70));
 
         AbrirCotacao2.setBackground(new java.awt.Color(204, 0, 0));
         AbrirCotacao2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -86,34 +125,22 @@ public class InternalFrameCotações extends javax.swing.JInternalFrame {
                 AbrirCotacao2ActionPerformed(evt);
             }
         });
-        getContentPane().add(AbrirCotacao2, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 270, 250, 100));
-
-        LSeuHistorico.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LSeuHistorico.setIcon(new javax.swing.ImageIcon(getClass().getResource("/COMPONENTESCOTAÇÃO/Grupo 44.png"))); // NOI18N
-        getContentPane().add(LSeuHistorico, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 0, 320, 60));
-
-        LCotaçõesFechadas.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LCotaçõesFechadas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/COMPONENTESCOTAÇÃO/Grupo 43.png"))); // NOI18N
-        getContentPane().add(LCotaçõesFechadas, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 0, 320, 60));
-
-        LCotaçõesemAberto.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LCotaçõesemAberto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/COMPONENTESCOTAÇÃO/Grupo 42.png"))); // NOI18N
-        getContentPane().add(LCotaçõesemAberto, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 320, 60));
+        getContentPane().add(AbrirCotacao2, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 500, 220, 80));
 
         Historico.setIcon(new javax.swing.ImageIcon(getClass().getResource("/COMPO..BOASVINDAS/Rectangle 8.png"))); // NOI18N
-        getContentPane().add(Historico, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 0, 320, 780));
+        getContentPane().add(Historico, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 0, 220, 620));
 
         CotaçõesAbertas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/COMPO..BOASVINDAS/Rectangle 8.png"))); // NOI18N
-        getContentPane().add(CotaçõesAbertas, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 320, 780));
+        getContentPane().add(CotaçõesAbertas, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 220, 620));
 
         CotaçõesFechadas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/COMPO..BOASVINDAS/Rectangle 8.png"))); // NOI18N
-        getContentPane().add(CotaçõesFechadas, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 0, 320, 780));
+        getContentPane().add(CotaçõesFechadas, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 0, 220, 620));
 
         BackGround.setIcon(new javax.swing.ImageIcon(getClass().getResource("/COMPO..BOASVINDAS/Background geral.png"))); // NOI18N
         BackGround.setText("jLabel1");
-        getContentPane().add(BackGround, new org.netbeans.lib.awtextra.AbsoluteConstraints(-30, 0, 1280, 780));
+        getContentPane().add(BackGround, new org.netbeans.lib.awtextra.AbsoluteConstraints(-450, 0, 1410, 780));
 
-        setBounds(0, 0, 1250, 800);
+        setBounds(0, 0, 950, 650);
     }// </editor-fold>//GEN-END:initComponents
 
     private void AbrirCotacaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AbrirCotacaoActionPerformed
@@ -127,18 +154,30 @@ public class InternalFrameCotações extends javax.swing.JInternalFrame {
     private void AbrirCotacao2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AbrirCotacao2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_AbrirCotacao2ActionPerformed
+
+    private void AbrirCotacao3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AbrirCotacao3ActionPerformed
+
+    }//GEN-LAST:event_AbrirCotacao3ActionPerformed
+
+    private void AbrirCotacao4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AbrirCotacao4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_AbrirCotacao4ActionPerformed
+
+    private void AbrirCotacao5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AbrirCotacao5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_AbrirCotacao5ActionPerformed
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton AbrirCotacao;
     private javax.swing.JButton AbrirCotacao1;
     private javax.swing.JButton AbrirCotacao2;
+    private javax.swing.JButton AbrirCotacao3;
+    private javax.swing.JButton AbrirCotacao4;
+    private javax.swing.JButton AbrirCotacao5;
     private javax.swing.JLabel BackGround;
     private javax.swing.JLabel CotaçõesAbertas;
     private javax.swing.JLabel CotaçõesFechadas;
     private javax.swing.JLabel Historico;
-    private javax.swing.JLabel LCotaçõesFechadas;
-    private javax.swing.JLabel LCotaçõesemAberto;
-    private javax.swing.JLabel LSeuHistorico;
     // End of variables declaration//GEN-END:variables
 }
