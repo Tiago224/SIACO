@@ -86,7 +86,7 @@ public class LOGINPRINCIPAL extends javax.swing.JFrame {
         background.setPreferredSize(new java.awt.Dimension(1440, 900));
         getContentPane().add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1920, 1110));
 
-        setSize(new java.awt.Dimension(1942, 1188));
+        setSize(new java.awt.Dimension(1603, 1017));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

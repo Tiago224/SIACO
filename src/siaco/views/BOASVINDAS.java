@@ -42,6 +42,7 @@ public class BOASVINDAS extends javax.swing.JFrame {
         ajuda = new javax.swing.JButton();
         background = new javax.swing.JLabel();
         jDesktopPanePrincipal = new javax.swing.JDesktopPane();
+        jDesktopPaneSecundario = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -51,7 +52,6 @@ public class BOASVINDAS extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Siaco v.3");
-        setMaximumSize(new java.awt.Dimension(800, 600));
         setMinimumSize(new java.awt.Dimension(1291, 753));
         setResizable(false);
         setSize(new java.awt.Dimension(1440, 900));
@@ -98,7 +98,7 @@ public class BOASVINDAS extends javax.swing.JFrame {
                 BQuemSomos1ActionPerformed(evt);
             }
         });
-        getContentPane().add(BQuemSomos1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 600, 150, 30));
+        getContentPane().add(BQuemSomos1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 600, 160, 30));
 
         BContato.setBackground(new java.awt.Color(0, 0, 0));
         BContato.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
@@ -241,7 +241,8 @@ public class BOASVINDAS extends javax.swing.JFrame {
         background.setOpaque(true);
         background.setPreferredSize(new java.awt.Dimension(1440, 900));
         getContentPane().add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(-100, -20, 1390, 1170));
-        getContentPane().add(jDesktopPanePrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 90, 750, 560));
+        getContentPane().add(jDesktopPanePrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 90, 750, 650));
+        getContentPane().add(jDesktopPaneSecundario, new org.netbeans.lib.awtextra.AbsoluteConstraints(341, 91, 950, 650));
 
         jMenu1.setText("Arquivo");
         jMenuBar1.add(jMenu1);
@@ -389,6 +390,7 @@ public class BOASVINDAS extends javax.swing.JFrame {
     private javax.swing.JButton ajuda;
     private javax.swing.JLabel background;
     private javax.swing.JDesktopPane jDesktopPanePrincipal;
+    private javax.swing.JDesktopPane jDesktopPaneSecundario;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
