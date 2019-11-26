@@ -10,7 +10,7 @@ public class BOASVINDAS extends javax.swing.JFrame {
       
   InternalFrameBemvindo telaBemvindo = new InternalFrameBemvindo();
   InternalFrameListaProdutos TelaListaProdutos = new InternalFrameListaProdutos();
-  static InternalFrameCotações telaCotações = new InternalFrameCotações();
+  public static InternalFrameCotações telaCotações = new InternalFrameCotações();
   
   //PADRAO DE PROJETO SINGLETON
   private static BOASVINDAS p;
@@ -22,12 +22,6 @@ public class BOASVINDAS extends javax.swing.JFrame {
         }
     return p;    
     }
-  
-    public static JDesktopPane getDesktopPaneSecundaria(){
-    telaCotações.dispose();
-    
-    return getInstancia().jDesktopPaneSecundario;
-    } 
     
    
   
@@ -43,8 +37,8 @@ public class BOASVINDAS extends javax.swing.JFrame {
     private void initComponents() {
 
         Logo = new javax.swing.JLabel();
-        jDesktopPanePrincipal = new javax.swing.JDesktopPane();
         jDesktopPaneSecundario = new javax.swing.JDesktopPane();
+        jDesktopPanePrincipal = new javax.swing.JDesktopPane();
         BTrabalheConosco = new javax.swing.JButton();
         BQuemSomos1 = new javax.swing.JButton();
         BContato = new javax.swing.JButton();
@@ -82,21 +76,6 @@ public class BOASVINDAS extends javax.swing.JFrame {
         Logo.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         getContentPane().add(Logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 340, -1));
 
-        jDesktopPanePrincipal.setOpaque(false);
-
-        javax.swing.GroupLayout jDesktopPanePrincipalLayout = new javax.swing.GroupLayout(jDesktopPanePrincipal);
-        jDesktopPanePrincipal.setLayout(jDesktopPanePrincipalLayout);
-        jDesktopPanePrincipalLayout.setHorizontalGroup(
-            jDesktopPanePrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 750, Short.MAX_VALUE)
-        );
-        jDesktopPanePrincipalLayout.setVerticalGroup(
-            jDesktopPanePrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 650, Short.MAX_VALUE)
-        );
-
-        getContentPane().add(jDesktopPanePrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 90, 750, 650));
-
         jDesktopPaneSecundario.setOpaque(false);
 
         javax.swing.GroupLayout jDesktopPaneSecundarioLayout = new javax.swing.GroupLayout(jDesktopPaneSecundario);
@@ -111,6 +90,21 @@ public class BOASVINDAS extends javax.swing.JFrame {
         );
 
         getContentPane().add(jDesktopPaneSecundario, new org.netbeans.lib.awtextra.AbsoluteConstraints(341, 91, 950, 650));
+
+        jDesktopPanePrincipal.setOpaque(false);
+
+        javax.swing.GroupLayout jDesktopPanePrincipalLayout = new javax.swing.GroupLayout(jDesktopPanePrincipal);
+        jDesktopPanePrincipal.setLayout(jDesktopPanePrincipalLayout);
+        jDesktopPanePrincipalLayout.setHorizontalGroup(
+            jDesktopPanePrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 750, Short.MAX_VALUE)
+        );
+        jDesktopPanePrincipalLayout.setVerticalGroup(
+            jDesktopPanePrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 650, Short.MAX_VALUE)
+        );
+
+        getContentPane().add(jDesktopPanePrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 90, 750, 650));
 
         BTrabalheConosco.setBackground(new java.awt.Color(0, 0, 0));
         BTrabalheConosco.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
@@ -275,7 +269,7 @@ public class BOASVINDAS extends javax.swing.JFrame {
             }
         });
         Menu.add(ajuda);
-        ajuda.setBounds(20, 430, 310, 43);
+        ajuda.setBounds(20, 430, 310, 44);
 
         getContentPane().add(Menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 340, 750));
 
@@ -440,8 +434,8 @@ public class BOASVINDAS extends javax.swing.JFrame {
     private javax.swing.JButton Relatorio;
     private javax.swing.JButton ajuda;
     private javax.swing.JLabel background;
-    private javax.swing.JDesktopPane jDesktopPanePrincipal;
-    private javax.swing.JDesktopPane jDesktopPaneSecundario;
+    public static javax.swing.JDesktopPane jDesktopPanePrincipal;
+    public static javax.swing.JDesktopPane jDesktopPaneSecundario;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;

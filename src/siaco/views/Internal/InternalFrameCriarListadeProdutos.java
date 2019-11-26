@@ -28,10 +28,23 @@ public class InternalFrameCriarListadeProdutos extends javax.swing.JInternalFram
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+        java.awt.GridBagConstraints gridBagConstraints;
 
-        AbrirCotacao = new javax.swing.JButton();
-        BackGround = new javax.swing.JLabel();
+        DadosdoProcesso13 = new javax.swing.JLabel();
+        CAMPODETEXTO2 = new javax.swing.JTextField();
+        CAMPODETEXTO3 = new javax.swing.JTextField();
+        DadosdoProcesso14 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
+        jScrollBar1 = new javax.swing.JScrollBar();
+        CAMPODETEXTO1 = new javax.swing.JTextField();
+        Quantidade = new javax.swing.JLabel();
+        bdetalhes1 = new javax.swing.JButton();
+        quantidade1 = new javax.swing.JTextField();
+        DadosdoProcesso12 = new javax.swing.JLabel();
+        badd1 = new javax.swing.JButton();
+        bdeletar1 = new javax.swing.JButton();
+        bdetalhes2 = new javax.swing.JButton();
+        BackGround = new javax.swing.JLabel();
 
         setBackground(null);
         setBorder(null);
@@ -41,38 +54,229 @@ public class InternalFrameCriarListadeProdutos extends javax.swing.JInternalFram
         setAlignmentY(0.0F);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        AbrirCotacao.setBackground(new java.awt.Color(0, 0, 255));
-        AbrirCotacao.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        AbrirCotacao.setForeground(new java.awt.Color(255, 255, 255));
-        AbrirCotacao.setText("Abrir Cotação");
-        AbrirCotacao.setBorder(null);
-        AbrirCotacao.setBorderPainted(false);
-        AbrirCotacao.addActionListener(new java.awt.event.ActionListener() {
+        DadosdoProcesso13.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        DadosdoProcesso13.setForeground(new java.awt.Color(255, 255, 255));
+        DadosdoProcesso13.setText("Codigo da Lista");
+        getContentPane().add(DadosdoProcesso13, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 70, 200, 30));
+
+        CAMPODETEXTO2.setEditable(false);
+        CAMPODETEXTO2.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        CAMPODETEXTO2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AbrirCotacaoActionPerformed(evt);
+                CAMPODETEXTO2ActionPerformed(evt);
             }
         });
-        getContentPane().add(AbrirCotacao, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 20, 270, 80));
+        getContentPane().add(CAMPODETEXTO2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, 200, 30));
+
+        CAMPODETEXTO3.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        CAMPODETEXTO3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CAMPODETEXTO3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(CAMPODETEXTO3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 100, 420, 30));
+
+        DadosdoProcesso14.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        DadosdoProcesso14.setForeground(new java.awt.Color(255, 255, 255));
+        DadosdoProcesso14.setText("Nome da Lista");
+        getContentPane().add(DadosdoProcesso14, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 70, 200, 30));
+
+        jPanel1.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel1.setForeground(new java.awt.Color(238, 238, 238));
+        jPanel1.setLayout(new java.awt.GridBagLayout());
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 6;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridheight = 3;
+        gridBagConstraints.ipady = 415;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(0, 43, 0, 0);
+        jPanel1.add(jScrollBar1, gridBagConstraints);
+
+        CAMPODETEXTO1.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        CAMPODETEXTO1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CAMPODETEXTO1ActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.ipadx = 439;
+        gridBagConstraints.ipady = 7;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(18, 32, 0, 0);
+        jPanel1.add(CAMPODETEXTO1, gridBagConstraints);
+
+        Quantidade.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        Quantidade.setText("Quant");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 3;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.ipadx = 48;
+        gridBagConstraints.ipady = 6;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(35, 12, 0, 0);
+        jPanel1.add(Quantidade, gridBagConstraints);
+
+        bdetalhes1.setBackground(new java.awt.Color(255, 153, 0));
+        bdetalhes1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        bdetalhes1.setForeground(new java.awt.Color(0, 0, 0));
+        bdetalhes1.setText("OBS");
+        bdetalhes1.setBorder(null);
+        bdetalhes1.setBorderPainted(false);
+        bdetalhes1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bdetalhes1ActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.ipadx = 42;
+        gridBagConstraints.ipady = 15;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(18, 12, 0, 0);
+        jPanel1.add(bdetalhes1, gridBagConstraints);
+
+        quantidade1.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        quantidade1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                quantidade1ActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 3;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.ipadx = 96;
+        gridBagConstraints.ipady = 7;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(18, 12, 0, 0);
+        jPanel1.add(quantidade1, gridBagConstraints);
+
+        DadosdoProcesso12.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        DadosdoProcesso12.setForeground(new java.awt.Color(255, 255, 255));
+        DadosdoProcesso12.setText("Descrição");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.ipadx = 153;
+        gridBagConstraints.ipady = 6;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(35, 32, 0, 0);
+        jPanel1.add(DadosdoProcesso12, gridBagConstraints);
+
+        badd1.setBackground(new java.awt.Color(0, 204, 51));
+        badd1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        badd1.setForeground(new java.awt.Color(0, 0, 0));
+        badd1.setText("ADD");
+        badd1.setBorder(null);
+        badd1.setBorderPainted(false);
+        badd1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                badd1ActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.ipadx = 40;
+        gridBagConstraints.ipady = 15;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(18, 18, 0, 0);
+        jPanel1.add(badd1, gridBagConstraints);
+
+        bdeletar1.setBackground(new java.awt.Color(255, 51, 51));
+        bdeletar1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        bdeletar1.setForeground(new java.awt.Color(0, 0, 0));
+        bdeletar1.setText("DELETAR");
+        bdeletar1.setBorder(null);
+        bdeletar1.setBorderPainted(false);
+        bdeletar1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bdeletar1ActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 5;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.ipadx = 12;
+        gridBagConstraints.ipady = 15;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(18, 12, 0, 0);
+        jPanel1.add(bdeletar1, gridBagConstraints);
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, 890, 420));
+
+        bdetalhes2.setBackground(new java.awt.Color(0, 204, 0));
+        bdetalhes2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        bdetalhes2.setForeground(new java.awt.Color(0, 0, 0));
+        bdetalhes2.setText("Salvar");
+        bdetalhes2.setBorder(null);
+        bdetalhes2.setBorderPainted(false);
+        bdetalhes2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bdetalhes2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(bdetalhes2, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 90, 120, 40));
 
         BackGround.setIcon(new javax.swing.ImageIcon(getClass().getResource("/COMPO..BOASVINDAS/Background geral.png"))); // NOI18N
         BackGround.setText("jLabel1");
         getContentPane().add(BackGround, new org.netbeans.lib.awtextra.AbsoluteConstraints(-640, -20, 1720, 910));
 
-        jPanel1.setBackground(new java.awt.Color(153, 153, 153));
-        jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 900, 460));
-
         setBounds(0, 0, 950, 650);
     }// </editor-fold>//GEN-END:initComponents
     
-    private void AbrirCotacaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AbrirCotacaoActionPerformed
+    private void bdetalhes1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bdetalhes1ActionPerformed
         
-    }//GEN-LAST:event_AbrirCotacaoActionPerformed
+    }//GEN-LAST:event_bdetalhes1ActionPerformed
+
+    private void CAMPODETEXTO1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CAMPODETEXTO1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CAMPODETEXTO1ActionPerformed
+
+    private void quantidade1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quantidade1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_quantidade1ActionPerformed
+
+    private void badd1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_badd1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_badd1ActionPerformed
+
+    private void bdeletar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bdeletar1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bdeletar1ActionPerformed
+
+    private void bdetalhes2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bdetalhes2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bdetalhes2ActionPerformed
+
+    private void CAMPODETEXTO2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CAMPODETEXTO2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CAMPODETEXTO2ActionPerformed
+
+    private void CAMPODETEXTO3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CAMPODETEXTO3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CAMPODETEXTO3ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton AbrirCotacao;
     private javax.swing.JLabel BackGround;
+    private javax.swing.JTextField CAMPODETEXTO1;
+    private javax.swing.JTextField CAMPODETEXTO2;
+    private javax.swing.JTextField CAMPODETEXTO3;
+    private javax.swing.JLabel DadosdoProcesso12;
+    private javax.swing.JLabel DadosdoProcesso13;
+    private javax.swing.JLabel DadosdoProcesso14;
+    private javax.swing.JLabel Quantidade;
+    private javax.swing.JButton badd1;
+    private javax.swing.JButton bdeletar1;
+    private javax.swing.JButton bdetalhes1;
+    private javax.swing.JButton bdetalhes2;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollBar jScrollBar1;
+    private javax.swing.JTextField quantidade1;
     // End of variables declaration//GEN-END:variables
 }

@@ -53,7 +53,7 @@ public class InternalFrameBemvindo extends javax.swing.JInternalFrame {
                 AbrirCotacaoActionPerformed(evt);
             }
         });
-        getContentPane().add(AbrirCotacao, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, 270, 80));
+        getContentPane().add(AbrirCotacao, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 380, 270, 80));
 
         emAndamento.setBackground(new java.awt.Color(255, 153, 0));
         emAndamento.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
@@ -66,7 +66,7 @@ public class InternalFrameBemvindo extends javax.swing.JInternalFrame {
                 emAndamentoActionPerformed(evt);
             }
         });
-        getContentPane().add(emAndamento, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 360, 270, 80));
+        getContentPane().add(emAndamento, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 380, 270, 80));
 
         BackGround.setIcon(new javax.swing.ImageIcon(getClass().getResource("/COMPO..BOASVINDAS/Background geral.png"))); // NOI18N
         BackGround.setText("jLabel1");
