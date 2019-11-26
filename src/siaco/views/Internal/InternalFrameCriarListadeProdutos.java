@@ -5,7 +5,9 @@
  */
 package siaco.views.Internal;
 
+import Controlador.ControladorProduto;
 import siaco.views.BOASVINDAS;
+import siaco.views.Internal.*;
 
 
 /**
@@ -110,6 +112,7 @@ public class InternalFrameCriarListadeProdutos extends javax.swing.JInternalFram
         jPanel1.add(CAMPODETEXTO1, gridBagConstraints);
 
         Quantidade.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        Quantidade.setForeground(new java.awt.Color(255, 255, 255));
         Quantidade.setText("Quant");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 3;
@@ -207,7 +210,7 @@ public class InternalFrameCriarListadeProdutos extends javax.swing.JInternalFram
         gridBagConstraints.insets = new java.awt.Insets(18, 12, 0, 0);
         jPanel1.add(bdeletar1, gridBagConstraints);
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, 890, 420));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, 890, 480));
 
         bdetalhes2.setBackground(new java.awt.Color(0, 204, 0));
         bdetalhes2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -230,6 +233,8 @@ public class InternalFrameCriarListadeProdutos extends javax.swing.JInternalFram
     }// </editor-fold>//GEN-END:initComponents
     
     private void bdetalhes1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bdetalhes1ActionPerformed
+
+    
         
     }//GEN-LAST:event_bdetalhes1ActionPerformed
 
@@ -242,7 +247,16 @@ public class InternalFrameCriarListadeProdutos extends javax.swing.JInternalFram
     }//GEN-LAST:event_quantidade1ActionPerformed
 
     private void badd1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_badd1ActionPerformed
-        // TODO add your handling code here:
+        boolean sucess;
+        int quantidade = Integer.parseInt(quantidade1.toString());
+        
+       try{
+           ControladorProduto produtocontrolador = new ControladorProduto();
+            produtocontrolador.cadastrarProduto(CAMPODETEXTO1,Descrição,quantidade);
+            
+       }cath()
+        
+    
     }//GEN-LAST:event_badd1ActionPerformed
 
     private void bdeletar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bdeletar1ActionPerformed

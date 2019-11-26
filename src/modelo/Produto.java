@@ -5,6 +5,8 @@
  */
 package modelo;
 
+import java.util.Random;
+
 /**
  *
  * @author Tiago
@@ -17,11 +19,25 @@ public class Produto {
     private double preço;
     private int quantidade;
 
+    public Produto( String nome, String Descrição, int quantidade) {
+        
+        this.nome = nome;
+        this.Descrição = Descrição;
+        this.quantidade = quantidade;
+    }
+
+    
+
     public int getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(int codigo) {
+    public void gerarCodigo(int codigo) {
+        Random n = new Random ();
+        codigo = n.nextInt(1000);
+        while(codigo < 0){
+            gerarCodigo(codigo);
+        }
         this.codigo = codigo;
     }
 
@@ -57,5 +73,9 @@ public class Produto {
         this.quantidade = quantidade;
     }
         
+    public void Cadastrar(Produto produto){
+        
+    }
     
+  
 }

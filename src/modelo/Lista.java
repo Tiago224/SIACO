@@ -5,6 +5,8 @@
  */
 package modelo;
 
+import java.awt.List;
+import java.util.ArrayList;
 import java.util.Date;
 
 /**
@@ -17,7 +19,7 @@ public class Lista {
     private int codigo;
     private String nome;
     private Date datacriação;
-    private Produto produto;
+    private ArrayList<Produto> produto = new ArrayList<Produto>();
 
     public Comprador getCriador() {
         return criador;
@@ -51,15 +53,6 @@ public class Lista {
         this.datacriação = datacriação;
     }
 
-    public Produto getProduto() {
-        return produto;
-    }
-
-    public void setProduto(Produto produto) {
-        this.produto = produto;
-    }
-    
-    
     
     
 }

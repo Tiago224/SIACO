@@ -1,13 +1,14 @@
 package modelo;
+import java.util.ArrayList;
 import java.util.Date;
 
 public class Cotação {
-    int condigo;
-    Date datainicio;
-    Date datatermino;
-    Lista lista;
-    Comprador comprador;
-    Fornecedor fornecedor;
+    private Integer condigo;
+    private Date datainicio;
+    private Date datatermino;
+    private ArrayList<Lista> lista = new ArrayList<Lista>();
+    private Comprador comprador;
+    private Fornecedor fornecedor;
 
     public int getCondigo() {
         return condigo;
@@ -31,14 +32,6 @@ public class Cotação {
 
     public void setDatatermino(Date datatermino) {
         this.datatermino = datatermino;
-    }
-
-    public Lista getLista() {
-        return lista;
-    }
-
-    public void setLista(Lista lista) {
-        this.lista = lista;
     }
 
     public Comprador getComprador() {
