@@ -35,9 +35,10 @@ public class LOGINPRINCIPAL extends javax.swing.JFrame {
         background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMinimumSize(new java.awt.Dimension(1440, 900));
+        setMaximumSize(new java.awt.Dimension(1293, 761));
+        setMinimumSize(new java.awt.Dimension(1293, 761));
         setResizable(false);
-        setSize(new java.awt.Dimension(1440, 900));
+        setSize(new java.awt.Dimension(1293, 761));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         ButtonFornecedor.setBackground(new java.awt.Color(0, 0, 0));
@@ -51,14 +52,14 @@ public class LOGINPRINCIPAL extends javax.swing.JFrame {
                 ButtonFornecedorActionPerformed(evt);
             }
         });
-        getContentPane().add(ButtonFornecedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 530, 190, 40));
+        getContentPane().add(ButtonFornecedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 470, 190, 40));
 
         ButtonComprador.setBackground(new java.awt.Color(0, 0, 0));
         ButtonComprador.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         ButtonComprador.setForeground(new java.awt.Color(255, 255, 255));
         ButtonComprador.setText("Comprador");
         ButtonComprador.setBorderPainted(false);
-        getContentPane().add(ButtonComprador, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 530, 190, 40));
+        getContentPane().add(ButtonComprador, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 470, 190, 40));
 
         ButtonCadastrar.setBackground(new java.awt.Color(0, 0, 0));
         ButtonCadastrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/COMPONENTES-LOGINPRINCIPAL/Cadastrar.png"))); // NOI18N
@@ -68,14 +69,14 @@ public class LOGINPRINCIPAL extends javax.swing.JFrame {
                 ButtonCadastrarMouseClicked(evt);
             }
         });
-        getContentPane().add(ButtonCadastrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1670, 50, 190, 40));
+        getContentPane().add(ButtonCadastrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 20, 190, 40));
 
         barrasenha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/COMPONENTES-LOGINPRINCIPAL/Rectangle 2.png"))); // NOI18N
-        getContentPane().add(barrasenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 490, -1, 110));
+        getContentPane().add(barrasenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(-550, 430, 1840, 110));
 
         Barracentral.setIcon(new javax.swing.ImageIcon(getClass().getResource("/COMPONENTES-LOGINPRINCIPAL/Group 5.png"))); // NOI18N
         Barracentral.setText("jLabel1");
-        getContentPane().add(Barracentral, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 1920, 230));
+        getContentPane().add(Barracentral, new org.netbeans.lib.awtextra.AbsoluteConstraints(-310, 250, 1600, 180));
 
         background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/COMPONENTES-LOGINPRINCIPAL/background login.png"))); // NOI18N
         background.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
@@ -84,9 +85,9 @@ public class LOGINPRINCIPAL extends javax.swing.JFrame {
         background.setName(""); // NOI18N
         background.setOpaque(true);
         background.setPreferredSize(new java.awt.Dimension(1440, 900));
-        getContentPane().add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1920, 1110));
+        getContentPane().add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1290, 820));
 
-        setSize(new java.awt.Dimension(1603, 1017));
+        pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

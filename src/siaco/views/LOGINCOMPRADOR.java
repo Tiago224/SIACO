@@ -37,7 +37,9 @@ public class LOGINCOMPRADOR extends javax.swing.JFrame {
         background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMinimumSize(new java.awt.Dimension(1440, 900));
+        setTitle("LOGIN");
+        setMaximumSize(new java.awt.Dimension(1293, 761));
+        setMinimumSize(new java.awt.Dimension(1293, 761));
         setResizable(false);
         setSize(new java.awt.Dimension(1440, 900));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -49,7 +51,7 @@ public class LOGINCOMPRADOR extends javax.swing.JFrame {
             ex.printStackTrace();
         }
         Login.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        getContentPane().add(Login, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 510, 400, 30));
+        getContentPane().add(Login, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 420, 400, 30));
 
         Senha.setForeground(new java.awt.Color(153, 153, 153));
         Senha.setText("Senha");
@@ -58,7 +60,7 @@ public class LOGINCOMPRADOR extends javax.swing.JFrame {
                 SenhaActionPerformed(evt);
             }
         });
-        getContentPane().add(Senha, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 550, 400, 30));
+        getContentPane().add(Senha, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 460, 400, 30));
 
         recuperarsenha.setBackground(new java.awt.Color(0, 0, 0));
         recuperarsenha.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -71,14 +73,14 @@ public class LOGINCOMPRADOR extends javax.swing.JFrame {
                 recuperarsenhaActionPerformed(evt);
             }
         });
-        getContentPane().add(recuperarsenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 610, 190, 40));
+        getContentPane().add(recuperarsenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 520, 190, 40));
 
         ButtonEntrar.setBackground(new java.awt.Color(0, 0, 0));
         ButtonEntrar.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         ButtonEntrar.setForeground(new java.awt.Color(255, 255, 255));
         ButtonEntrar.setText("Entrar");
         ButtonEntrar.setBorderPainted(false);
-        getContentPane().add(ButtonEntrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 510, 130, 70));
+        getContentPane().add(ButtonEntrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 420, 130, 70));
 
         Logout.setBackground(new java.awt.Color(0, 0, 0));
         Logout.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -93,11 +95,11 @@ public class LOGINCOMPRADOR extends javax.swing.JFrame {
         getContentPane().add(Logout, new org.netbeans.lib.awtextra.AbsoluteConstraints(1670, 50, 190, 40));
 
         barrasenha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/COMPONENTES-LOGINPRINCIPAL/Rectangle 2.png"))); // NOI18N
-        getContentPane().add(barrasenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 490, -1, 110));
+        getContentPane().add(barrasenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(-320, 400, -1, 110));
 
         Barracentral.setIcon(new javax.swing.ImageIcon(getClass().getResource("/COMPONENTES-LOGINPRINCIPAL/Group 5.png"))); // NOI18N
         Barracentral.setText("jLabel1");
-        getContentPane().add(Barracentral, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 1920, 230));
+        getContentPane().add(Barracentral, new org.netbeans.lib.awtextra.AbsoluteConstraints(-320, 180, 1630, 230));
 
         background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/COMPONENTES-LOGINPRINCIPAL/background login.png"))); // NOI18N
         background.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
@@ -106,9 +108,9 @@ public class LOGINCOMPRADOR extends javax.swing.JFrame {
         background.setName(""); // NOI18N
         background.setOpaque(true);
         background.setPreferredSize(new java.awt.Dimension(1440, 900));
-        getContentPane().add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1920, 1110));
+        getContentPane().add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1300, 800));
 
-        setSize(new java.awt.Dimension(1932, 1135));
+        setSize(new java.awt.Dimension(1302, 800));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

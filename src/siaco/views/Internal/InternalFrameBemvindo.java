@@ -40,6 +40,7 @@ public class InternalFrameBemvindo extends javax.swing.JInternalFrame {
         setTitle("Bem vindo");
         setAlignmentX(0.0F);
         setAlignmentY(0.0F);
+        setPreferredSize(new java.awt.Dimension(750, 650));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         AbrirCotacao.setBackground(new java.awt.Color(0, 0, 255));

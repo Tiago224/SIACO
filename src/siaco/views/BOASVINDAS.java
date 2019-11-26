@@ -107,32 +107,32 @@ public class BOASVINDAS extends javax.swing.JFrame {
         getContentPane().add(jDesktopPanePrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 90, 750, 650));
 
         BTrabalheConosco.setBackground(new java.awt.Color(0, 0, 0));
-        BTrabalheConosco.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        BTrabalheConosco.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        BTrabalheConosco.setForeground(new java.awt.Color(0, 255, 255));
         BTrabalheConosco.setText("Trabalhe Conosco");
+        BTrabalheConosco.setBorder(null);
         BTrabalheConosco.setBorderPainted(false);
-        BTrabalheConosco.setContentAreaFilled(false);
         BTrabalheConosco.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         BTrabalheConosco.setDebugGraphicsOptions(javax.swing.DebugGraphics.LOG_OPTION);
         BTrabalheConosco.setFocusCycleRoot(true);
         BTrabalheConosco.setHideActionText(true);
-        BTrabalheConosco.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         BTrabalheConosco.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BTrabalheConoscoActionPerformed(evt);
             }
         });
-        getContentPane().add(BTrabalheConosco, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 660, 220, 30));
+        getContentPane().add(BTrabalheConosco, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 660, 170, 30));
 
         BQuemSomos1.setBackground(new java.awt.Color(0, 0, 0));
         BQuemSomos1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        BQuemSomos1.setForeground(new java.awt.Color(0, 255, 255));
         BQuemSomos1.setText("Quem Somos");
+        BQuemSomos1.setBorder(null);
         BQuemSomos1.setBorderPainted(false);
-        BQuemSomos1.setContentAreaFilled(false);
         BQuemSomos1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         BQuemSomos1.setDebugGraphicsOptions(javax.swing.DebugGraphics.LOG_OPTION);
         BQuemSomos1.setFocusCycleRoot(true);
         BQuemSomos1.setHideActionText(true);
-        BQuemSomos1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         BQuemSomos1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BQuemSomos1ActionPerformed(evt);
@@ -142,14 +142,14 @@ public class BOASVINDAS extends javax.swing.JFrame {
 
         BContato.setBackground(new java.awt.Color(0, 0, 0));
         BContato.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        BContato.setForeground(new java.awt.Color(0, 255, 255));
         BContato.setText("Contato");
+        BContato.setBorder(null);
         BContato.setBorderPainted(false);
-        BContato.setContentAreaFilled(false);
         BContato.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         BContato.setDebugGraphicsOptions(javax.swing.DebugGraphics.LOG_OPTION);
         BContato.setFocusCycleRoot(true);
         BContato.setHideActionText(true);
-        BContato.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         BContato.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BContatoActionPerformed(evt);
@@ -339,7 +339,6 @@ public class BOASVINDAS extends javax.swing.JFrame {
     jDesktopPaneSecundario.setVisible(true);
     jDesktopPaneSecundario.add(telaCotações);
     
-
     
     telaCotações.setVisible(true);
     telaCotações.setClosable(true);

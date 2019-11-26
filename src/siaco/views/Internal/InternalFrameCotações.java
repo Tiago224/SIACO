@@ -149,14 +149,10 @@ public class InternalFrameCotações extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_BFinanceiroActionPerformed
 
     private void BAbrirCotacaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BAbrirCotacaoActionPerformed
-    
-        
+            
     BOASVINDAS.jDesktopPaneSecundario.add(telaNovaCotação);
     telaNovaCotação.setVisible(true);
-    telaNovaCotação.setLocation(0, 0);
-    
-        
-        
+    telaNovaCotação.setLocation(0, 0);    
     }//GEN-LAST:event_BAbrirCotacaoActionPerformed
 
     private void BfecharActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BfecharActionPerformed
