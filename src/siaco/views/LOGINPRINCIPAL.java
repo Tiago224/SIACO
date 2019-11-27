@@ -58,6 +58,11 @@ public class LOGINPRINCIPAL extends javax.swing.JFrame {
         ButtonComprador.setForeground(new java.awt.Color(255, 255, 255));
         ButtonComprador.setText("Comprador");
         ButtonComprador.setBorderPainted(false);
+        ButtonComprador.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ButtonCompradorActionPerformed(evt);
+            }
+        });
         getContentPane().add(ButtonComprador, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 470, 190, 40));
 
         ButtonCadastrar.setBackground(new java.awt.Color(0, 0, 0));
@@ -107,6 +112,14 @@ public class LOGINPRINCIPAL extends javax.swing.JFrame {
     CADASTROUSUARIO novocadastro = new CADASTROUSUARIO();
     novocadastro.setVisible(true);
     }//GEN-LAST:event_ButtonCadastrarActionPerformed
+
+    private void ButtonCompradorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonCompradorActionPerformed
+    
+    LOGINCOMPRADOR novologin = new LOGINCOMPRADOR();
+    novologin.setVisible(true);
+    
+    
+    }//GEN-LAST:event_ButtonCompradorActionPerformed
 
     /**
      * @param args the command line arguments

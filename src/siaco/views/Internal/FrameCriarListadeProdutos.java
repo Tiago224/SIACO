@@ -241,7 +241,7 @@ public class FrameCriarListadeProdutos extends javax.swing.JFrame {
     }//GEN-LAST:event_CAMPODETEXTO1ActionPerformed
 
     private void bdetalhes1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bdetalhes1ActionPerformed
-        Jframedescrição telaDescrição = new Jframedescrição();
+        FrameDescriçãodoProduto telaDescrição = new FrameDescriçãodoProduto();
         telaDescrição.setVisible(true);
 
     }//GEN-LAST:event_bdetalhes1ActionPerformed
@@ -255,7 +255,7 @@ public class FrameCriarListadeProdutos extends javax.swing.JFrame {
         try{
             ControladorProduto produtocontrolador = new ControladorProduto();
             int quantidade = Integer.parseInt(jTextquantidade1.getText());
-            sucess = produtocontrolador.cadastrarProduto(CAMPODETEXTO1.getText(),CAMPODETEXTO2.getText(),quantidade);
+            sucess = produtocontrolador.cadastrarProduto(CAMPODETEXTO1.getText(),CAMPODETEXTO1.getText(),quantidade);
             if(sucess ==  true){
 
                 JOptionPane.showMessageDialog(null," Produto Cadastrado Com Sucesso ");

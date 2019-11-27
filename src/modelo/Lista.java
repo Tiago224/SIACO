@@ -6,8 +6,10 @@
 package modelo;
 
 import java.awt.List;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Random;
 
 /**
  *
@@ -18,8 +20,17 @@ public class Lista {
     private Comprador criador;
     private int codigo;
     private String nome;
-    private Date datacriação;
+    private SimpleDateFormat datacriação;
     private ArrayList<Produto> produto = new ArrayList<Produto>();
+
+    public Lista(String nome) {
+        this.criador = criador;
+        this.codigo = codigo;
+        this.nome = nome;
+        this.datacriação = datacriação;
+    }
+    
+    
 
     public Comprador getCriador() {
         return criador;
@@ -33,7 +44,13 @@ public class Lista {
         return codigo;
     }
 
-    public void setCodigo(int codigo) {
+    public void gerarCodigo(int codigo) {
+         Random n = new Random ();
+        codigo = n.nextInt(1000);
+        while(codigo < 0){
+            gerarCodigo(codigo);
+        }
+        String codigoformatado = "L" +(char)codigo;
         this.codigo = codigo;
     }
 
@@ -45,14 +62,20 @@ public class Lista {
         this.nome = nome;
     }
 
-    public Date getDatacriação() {
+    public SimpleDateFormat getDatacriação() {
         return datacriação;
     }
 
-    public void setDatacriação(Date datacriação) {
-        this.datacriação = datacriação;
+    public void setDatacriação(SimpleDateFormat datacriaçãolocal) {
+        Date hoje = new Date();
+        SimpleDateFormat df;
+        df = new SimpleDateFormat("dd/MM/yyyy");
+        df.format(hoje);
+        this.datacriação = df;
     }
 
-    
+    public void Cadastrar(Lista lista){
+        
+   }
     
 }
