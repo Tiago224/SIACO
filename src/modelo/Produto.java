@@ -62,6 +62,7 @@ public class Produto {
     }
 
     public void setPreço(double preço) {
+        
         this.preço = preço;
     }
 
@@ -75,7 +76,7 @@ public class Produto {
         
     public void Cadastrar(Produto produto){
         
-    }
+   }
     
   
 }

@@ -38,7 +38,6 @@ public class LOGINCOMPRADOR extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("LOGIN");
-        setMaximumSize(new java.awt.Dimension(1293, 761));
         setMinimumSize(new java.awt.Dimension(1293, 761));
         setResizable(false);
         setSize(new java.awt.Dimension(1440, 900));
@@ -51,6 +50,11 @@ public class LOGINCOMPRADOR extends javax.swing.JFrame {
             ex.printStackTrace();
         }
         Login.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        Login.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LoginActionPerformed(evt);
+            }
+        });
         getContentPane().add(Login, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 420, 400, 30));
 
         Senha.setForeground(new java.awt.Color(153, 153, 153));
@@ -125,6 +129,10 @@ public class LOGINCOMPRADOR extends javax.swing.JFrame {
     private void SenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SenhaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_SenhaActionPerformed
+
+    private void LoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoginActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_LoginActionPerformed
 
     /**
      * @param args the command line arguments

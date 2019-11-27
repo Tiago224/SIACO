@@ -37,6 +37,7 @@ public class BOASVINDAS extends javax.swing.JFrame {
     private void initComponents() {
 
         Logo = new javax.swing.JLabel();
+        PainelSuperior = new javax.swing.JPanel();
         jDesktopPaneSecundario = new javax.swing.JDesktopPane();
         jDesktopPanePrincipal = new javax.swing.JDesktopPane();
         BTrabalheConosco = new javax.swing.JButton();
@@ -44,7 +45,6 @@ public class BOASVINDAS extends javax.swing.JFrame {
         BContato = new javax.swing.JButton();
         BarraInferior = new javax.swing.JLabel();
         BarraLateralDireito = new javax.swing.JLabel();
-        PainelSuperior = new javax.swing.JPanel();
         Menu = new javax.swing.JPanel();
         ListaProdutos = new javax.swing.JButton();
         Cotacoes = new javax.swing.JButton();
@@ -75,6 +75,10 @@ public class BOASVINDAS extends javax.swing.JFrame {
         Logo.setPreferredSize(new java.awt.Dimension(259, 90));
         Logo.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         getContentPane().add(Logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 340, -1));
+
+        PainelSuperior.setBackground(new java.awt.Color(51, 51, 51));
+        PainelSuperior.setLayout(null);
+        getContentPane().add(PainelSuperior, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 0, 1200, 90));
 
         jDesktopPaneSecundario.setOpaque(false);
 
@@ -162,10 +166,6 @@ public class BOASVINDAS extends javax.swing.JFrame {
 
         BarraLateralDireito.setIcon(new javax.swing.ImageIcon(getClass().getResource("/COMPO..BOASVINDAS/Rectangle 8.png"))); // NOI18N
         getContentPane().add(BarraLateralDireito, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 0, 200, 750));
-
-        PainelSuperior.setBackground(new java.awt.Color(51, 51, 51));
-        PainelSuperior.setLayout(null);
-        getContentPane().add(PainelSuperior, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 0, 1200, 90));
 
         Menu.setBackground(new java.awt.Color(153, 153, 153));
         Menu.setLayout(null);
@@ -307,8 +307,8 @@ public class BOASVINDAS extends javax.swing.JFrame {
     }
         
     private void BemvindosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BemvindosActionPerformed
-        fecharultaimjanela(TelaListaProdutos);
-        fecharultaimjanela(telaCotações);
+    fecharultaimjanela(TelaListaProdutos);
+    fecharultaimjanela(telaCotações);
     jDesktopPaneSecundario.setVisible(false);
     jDesktopPanePrincipal.setVisible(true);
     jDesktopPanePrincipal.add(telaBemvindo);
@@ -319,12 +319,11 @@ public class BOASVINDAS extends javax.swing.JFrame {
     }//GEN-LAST:event_BemvindosActionPerformed
 
     private void ListaProdutosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ListaProdutosActionPerformed
+    fecharultaimjanela(telaBemvindo);
+    fecharultaimjanela(telaCotações);
     jDesktopPaneSecundario.setVisible(false);
     jDesktopPanePrincipal.setVisible(true);
-        jDesktopPanePrincipal.add(TelaListaProdutos);
-        fecharultaimjanela(telaBemvindo);
-        fecharultaimjanela(telaCotações);
-    
+    jDesktopPanePrincipal.add(TelaListaProdutos);
     TelaListaProdutos.setVisible(true);
     TelaListaProdutos.setClosable(true);
     TelaListaProdutos.setLocation(0,0);
@@ -338,10 +337,7 @@ public class BOASVINDAS extends javax.swing.JFrame {
     jDesktopPanePrincipal.setVisible(false);
     jDesktopPaneSecundario.setVisible(true);
     jDesktopPaneSecundario.add(telaCotações);
-    
-    
     telaCotações.setVisible(true);
-    telaCotações.setClosable(true);
     telaCotações.setLocation(0,0);
   
       

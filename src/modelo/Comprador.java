@@ -12,11 +12,23 @@ package modelo;
 public class Comprador {
     
     private String cnpjcpf;
+    private String nome;
     private String razãoSocial;
     private String cep;
     private String telefone;
-    private String limiteTransf;
+    private int limiteTransf;// Ignora esse aqui
     private String senha;
+
+    public Comprador(String cnpjcpf, String nome, String razãoSocial, String cep, String telefone, String senha) {
+        this.cnpjcpf = cnpjcpf;
+        this.nome = nome;
+        this.razãoSocial = razãoSocial;
+        this.cep = cep;
+        this.telefone = telefone;
+        this.limiteTransf = 6;
+        this.senha = senha;
+    }
+    
 
     public String getCnpjcpf() {
         return cnpjcpf;
@@ -50,12 +62,8 @@ public class Comprador {
         this.telefone = telefone;
     }
 
-    public String getLimiteTransf() {
+    public int getLimiteTransf() {
         return limiteTransf;
-    }
-
-    public void setLimiteTransf(String limiteTransf) {
-        this.limiteTransf = limiteTransf;
     }
 
     public String getSenha() {
@@ -65,8 +73,18 @@ public class Comprador {
     public void setSenha(String senha) {
         this.senha = senha;
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
     
-    
+     public void Cadastrar(Comprador usuario){
+        
+    }
     
     
 }

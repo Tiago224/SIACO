@@ -13,7 +13,7 @@ import siaco.views.BOASVINDAS;
  */
 public class InternalFrameListaProdutos extends javax.swing.JInternalFrame {
 
-    InternalFrameCriarListadeProdutos Lista = new InternalFrameCriarListadeProdutos();
+    
     
     
     
@@ -113,10 +113,11 @@ public class InternalFrameListaProdutos extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_bMinhaListaActionPerformed
 
     private void bCriarListaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bCriarListaActionPerformed
-    BOASVINDAS.jDesktopPaneSecundario.add(Lista);
-    BOASVINDAS.jDesktopPaneSecundario.setVisible(true);
+    FrameCriarListadeProdutos Lista = new FrameCriarListadeProdutos();
     Lista.setVisible(true);
-    Lista.setLocation(0, 0);
+    
+    
+    
     }//GEN-LAST:event_bCriarListaActionPerformed
 
     private void bfavoritosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bfavoritosActionPerformed

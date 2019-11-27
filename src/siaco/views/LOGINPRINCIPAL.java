@@ -35,7 +35,6 @@ public class LOGINPRINCIPAL extends javax.swing.JFrame {
         background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(1293, 761));
         setMinimumSize(new java.awt.Dimension(1293, 761));
         setResizable(false);
         setSize(new java.awt.Dimension(1293, 761));
@@ -69,6 +68,11 @@ public class LOGINPRINCIPAL extends javax.swing.JFrame {
                 ButtonCadastrarMouseClicked(evt);
             }
         });
+        ButtonCadastrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ButtonCadastrarActionPerformed(evt);
+            }
+        });
         getContentPane().add(ButtonCadastrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 20, 190, 40));
 
         barrasenha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/COMPONENTES-LOGINPRINCIPAL/Rectangle 2.png"))); // NOI18N
@@ -98,6 +102,11 @@ public class LOGINPRINCIPAL extends javax.swing.JFrame {
     private void ButtonFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonFornecedorActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_ButtonFornecedorActionPerformed
+
+    private void ButtonCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonCadastrarActionPerformed
+    CADASTROUSUARIO novocadastro = new CADASTROUSUARIO();
+    novocadastro.setVisible(true);
+    }//GEN-LAST:event_ButtonCadastrarActionPerformed
 
     /**
      * @param args the command line arguments

@@ -11,21 +11,16 @@ import modelo.*;
  */
 public class ControladorProduto {
     
-    public boolean cadastrarProduto( Integer codigo,String nome,String Descrição,double preço,int quantidade){
-        
-        
+    public boolean cadastrarProduto( String nome,String Descrição,int quantidade){
        
-        if(codigo != null && nome.length() > 0 && nome != null && 
-           Descrição != null && Descrição.length() > 0 && preço > 0 && quantidade > 0)
+        if( nome.length() > 0 && nome != null && 
+           Descrição != null && Descrição.length() > 0 && quantidade > 0)
         {
             
          Produto produto = new Produto(nome,Descrição,quantidade);
          produto.Cadastrar(produto);
          return true;
         }
-        
-        
-        
         
         return false;
     }

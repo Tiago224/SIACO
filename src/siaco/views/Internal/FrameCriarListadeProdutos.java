@@ -5,21 +5,19 @@
  */
 package siaco.views.Internal;
 
-import Controlador.ControladorProduto;
-import siaco.views.BOASVINDAS;
-import siaco.views.Internal.*;
-
-
+import Controlador.*;
+import javax.swing.JOptionPane;
 /**
  *
  * @author Tiago
  */
-public class InternalFrameCriarListadeProdutos extends javax.swing.JInternalFrame {
- 
-    
-    public InternalFrameCriarListadeProdutos() {
+public class FrameCriarListadeProdutos extends javax.swing.JFrame {
+
+    /**
+     * Creates new form FrameCriarListadeProdutos
+     */
+    public FrameCriarListadeProdutos() {
         initComponents();
-        
     }
 
     /**
@@ -41,19 +39,18 @@ public class InternalFrameCriarListadeProdutos extends javax.swing.JInternalFram
         CAMPODETEXTO1 = new javax.swing.JTextField();
         Quantidade = new javax.swing.JLabel();
         bdetalhes1 = new javax.swing.JButton();
-        quantidade1 = new javax.swing.JTextField();
+        jTextquantidade1 = new javax.swing.JTextField();
         DadosdoProcesso12 = new javax.swing.JLabel();
         badd1 = new javax.swing.JButton();
         bdeletar1 = new javax.swing.JButton();
         bdetalhes2 = new javax.swing.JButton();
         BackGround = new javax.swing.JLabel();
 
-        setBackground(null);
-        setBorder(null);
-        setClosable(true);
-        setTitle("Lista de Produtos");
-        setAlignmentX(0.0F);
-        setAlignmentY(0.0F);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Cadastro Lista");
+        setMaximumSize(new java.awt.Dimension(950, 650));
+        setMinimumSize(new java.awt.Dimension(950, 650));
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         DadosdoProcesso13.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
@@ -61,7 +58,6 @@ public class InternalFrameCriarListadeProdutos extends javax.swing.JInternalFram
         DadosdoProcesso13.setText("Codigo da Lista");
         getContentPane().add(DadosdoProcesso13, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 70, 200, 30));
 
-        CAMPODETEXTO2.setEditable(false);
         CAMPODETEXTO2.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         CAMPODETEXTO2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -143,10 +139,10 @@ public class InternalFrameCriarListadeProdutos extends javax.swing.JInternalFram
         gridBagConstraints.insets = new java.awt.Insets(18, 12, 0, 0);
         jPanel1.add(bdetalhes1, gridBagConstraints);
 
-        quantidade1.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        quantidade1.addActionListener(new java.awt.event.ActionListener() {
+        jTextquantidade1.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        jTextquantidade1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                quantidade1ActionPerformed(evt);
+                jTextquantidade1ActionPerformed(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -156,7 +152,7 @@ public class InternalFrameCriarListadeProdutos extends javax.swing.JInternalFram
         gridBagConstraints.ipady = 7;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(18, 12, 0, 0);
-        jPanel1.add(quantidade1, gridBagConstraints);
+        jPanel1.add(jTextquantidade1, gridBagConstraints);
 
         DadosdoProcesso12.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         DadosdoProcesso12.setForeground(new java.awt.Color(255, 255, 255));
@@ -226,37 +222,50 @@ public class InternalFrameCriarListadeProdutos extends javax.swing.JInternalFram
         getContentPane().add(bdetalhes2, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 90, 120, 40));
 
         BackGround.setIcon(new javax.swing.ImageIcon(getClass().getResource("/COMPO..BOASVINDAS/Background geral.png"))); // NOI18N
-        BackGround.setText("jLabel1");
         getContentPane().add(BackGround, new org.netbeans.lib.awtextra.AbsoluteConstraints(-640, -20, 1720, 910));
 
-        setBounds(0, 0, 950, 650);
+        setSize(new java.awt.Dimension(966, 689));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-    
-    private void bdetalhes1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bdetalhes1ActionPerformed
 
-    
-        
-    }//GEN-LAST:event_bdetalhes1ActionPerformed
+    private void CAMPODETEXTO2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CAMPODETEXTO2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CAMPODETEXTO2ActionPerformed
+
+    private void CAMPODETEXTO3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CAMPODETEXTO3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CAMPODETEXTO3ActionPerformed
 
     private void CAMPODETEXTO1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CAMPODETEXTO1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_CAMPODETEXTO1ActionPerformed
 
-    private void quantidade1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quantidade1ActionPerformed
+    private void bdetalhes1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bdetalhes1ActionPerformed
+        Jframedescrição telaDescrição = new Jframedescrição();
+        telaDescrição.setVisible(true);
+
+    }//GEN-LAST:event_bdetalhes1ActionPerformed
+
+    private void jTextquantidade1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextquantidade1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_quantidade1ActionPerformed
+    }//GEN-LAST:event_jTextquantidade1ActionPerformed
 
     private void badd1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_badd1ActionPerformed
         boolean sucess;
-        int quantidade = Integer.parseInt(quantidade1.toString());
-        
-       try{
-           ControladorProduto produtocontrolador = new ControladorProduto();
-            produtocontrolador.cadastrarProduto(CAMPODETEXTO1,Descrição,quantidade);
-            
-       }cath()
-        
-    
+        try{
+            ControladorProduto produtocontrolador = new ControladorProduto();
+            int quantidade = Integer.parseInt(jTextquantidade1.getText());
+            sucess = produtocontrolador.cadastrarProduto(CAMPODETEXTO1.getText(),CAMPODETEXTO2.getText(),quantidade);
+            if(sucess ==  true){
+
+                JOptionPane.showMessageDialog(null," Produto Cadastrado Com Sucesso ");
+            }else{
+                JOptionPane.showMessageDialog(null," Os Campos não foram preenchidos corretamente ");
+            }
+        }catch(Exception ex){
+            JOptionPane.showMessageDialog(null," Error " + ex);
+        }
+
     }//GEN-LAST:event_badd1ActionPerformed
 
     private void bdeletar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bdeletar1ActionPerformed
@@ -267,14 +276,40 @@ public class InternalFrameCriarListadeProdutos extends javax.swing.JInternalFram
         // TODO add your handling code here:
     }//GEN-LAST:event_bdetalhes2ActionPerformed
 
-    private void CAMPODETEXTO2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CAMPODETEXTO2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_CAMPODETEXTO2ActionPerformed
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(FrameCriarListadeProdutos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(FrameCriarListadeProdutos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(FrameCriarListadeProdutos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(FrameCriarListadeProdutos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
 
-    private void CAMPODETEXTO3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CAMPODETEXTO3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_CAMPODETEXTO3ActionPerformed
-
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new FrameCriarListadeProdutos().setVisible(true);
+            }
+        });
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel BackGround;
@@ -291,6 +326,6 @@ public class InternalFrameCriarListadeProdutos extends javax.swing.JInternalFram
     private javax.swing.JButton bdetalhes2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollBar jScrollBar1;
-    private javax.swing.JTextField quantidade1;
+    private javax.swing.JTextField jTextquantidade1;
     // End of variables declaration//GEN-END:variables
 }
